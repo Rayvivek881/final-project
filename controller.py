@@ -128,12 +128,4 @@ def led(vehicle_count, ind) -> int:
     #red_1.write(1)
     # red_3.write(1)
     #time.sleep(5)
-    
-    # yellow_4.write(0)
-    # yellow_1.write(0)
-    # green_4.write(0)
-    # red_2.write(0)
-    # red_3.write(0)
-   # red_1.write(0)
-    #time.sleep(2)
      
