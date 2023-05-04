@@ -3,9 +3,6 @@ import glob
 import numpy as np
 import controller as cnt
 # from inspect import getargs
-
-
-
 class VehicleDetector:
 
     def __init__(self):
@@ -13,8 +10,6 @@ class VehicleDetector:
         net = cv2.dnn.readNet("dnn_model/yolov4.weights", "dnn_model/yolov4.cfg")
         self.model = cv2.dnn_DetectionModel(net)
         self.model.setInputParams(size=(832, 832), scale=1 / 255)
-
-
         # Allow classes containing Vehicles only
         self.classes_allowed = [1, 2, 3, 5, 6, 7, 8]
 
